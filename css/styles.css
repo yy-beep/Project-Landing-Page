@@ -1,0 +1,71 @@
+/* * {
+    border: 2px red dashed;
+    padding: 5px;
+} */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.header,
+.main-1 {
+    background-color: #1F2937;
+}
+
+/* Header Logo and Links */
+
+div.logo {
+    color: #F0FAF8;
+}
+
+div ul {
+    list-style: none;
+}
+
+div ul li a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+/* Header Logo and Links -end /// main -start */
+
+div h1.hero-main-text {
+    color: #F9FAF8;
+    font-size: 48px;
+}
+
+div p.hero-secondary-text {
+    color: #E5E7EB;
+    font-size: 24px;
+}
+
+/* Flexbox */
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+div.header ul {
+    display: flex;
+    gap: 12px;
+    margin-left: auto;
+}
+
+div.main-1 {
+    display: flex;
+    padding: 8px;
+    gap: 12px;
+}
+
+.main-1-text {
+    flex-basis: 600px;
+}
+
+.header,
+.main-1-text {
+    padding-left: 300px;
+}
