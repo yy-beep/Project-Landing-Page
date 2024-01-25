@@ -6,66 +6,115 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .header,
-.main-1 {
+.section1 {
     background-color: #1F2937;
 }
 
 /* Header Logo and Links */
 
 div.logo {
-    color: #F0FAF8;
+    color: #F9FAF8;
+    font-size: 24px;
 }
 
 div ul {
     list-style: none;
+    padding-left: 0;
 }
 
 div ul li a {
     text-decoration: none;
     color: #E5E7EB;
+    font-size: 18px;
 }
 
 /* Header Logo and Links -end /// main -start */
 
-div h1.hero-main-text {
+div div h1 {
     color: #F9FAF8;
     font-size: 48px;
+    font-weight: 900;
 }
 
-div p.hero-secondary-text {
+div div .hero2 {
     color: #E5E7EB;
-    font-size: 24px;
+    font-size: 18px;
 }
 
-/* Flexbox */
+div div #hero-button {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border-radius: 6px;
+    padding: 4px 19px;
+    border: none;
+}
+
+/* section 1 -end, section 2 -start */
+
+div h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+div div img {
+    border: 2px solid #3882F6;
+    border-radius: 6px;
+}
+
+div div.quote {
+    background-color: #E5E6EB;
+}
+
+div div p.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: light;
+    color: #1F2937;
+}
+
+.ad {
+    background-color: #3882F6;
+}
+
+/* section 2 -end, footer -start */
+
+.footer {
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+div div #ad-button {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border-radius: 6px;
+    padding: 4px 19px;
+    border: 2px solid #E5E7EB;
+}
+
+/* footer -end, flexbox -start */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
 
 .header {
     display: flex;
     align-items: center;
-    padding: 8px;
 }
 
-div.header ul {
+.header ul {
     display: flex;
     gap: 12px;
     margin-left: auto;
 }
 
-div.main-1 {
+.section1 {
     display: flex;
-    padding: 8px;
-    gap: 12px;
-}
-
-.main-1-text {
-    flex-basis: 600px;
-}
-
-.header,
-.main-1-text {
-    padding-left: 300px;
+    gap: 25px;
 }
