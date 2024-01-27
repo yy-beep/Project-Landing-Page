@@ -3,49 +3,50 @@
     padding: 5px;
 } */
 
+* {
+    margin: 0;
+    padding: 0; 
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     height: 100vh;
 }
 
-.header,
-.section1 {
+.navbar,
+.header {
     background-color: #1F2937;
 }
 
-/* Header Logo and Links */
-
-div.logo {
+.logo {
     color: #F9FAF8;
     font-size: 24px;
 }
 
-div ul {
+nav ul {
     list-style: none;
     padding-left: 0;
 }
 
-div ul li a {
+nav ul li a {
     text-decoration: none;
     color: #E5E7EB;
     font-size: 18px;
 }
 
-/* Header Logo and Links -end /// main -start */
-
-div div h1 {
+h1 {
     color: #F9FAF8;
     font-size: 48px;
     font-weight: 900;
 }
 
-div div .hero2 {
+.header p {
     color: #E5E7EB;
     font-size: 18px;
 }
 
-div div #hero-button {
+.header button {
     background-color: #3882F6;
     color: #E5E7EB;
     border-radius: 6px;
@@ -53,24 +54,22 @@ div div #hero-button {
     border: none;
 }
 
-/* section 1 -end, section 2 -start */
-
-div h2 {
+h2 {
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
 }
 
-div div img {
+.section img {
     border: 2px solid #3882F6;
     border-radius: 6px;
 }
 
-div div.quote {
+.quote {
     background-color: #E5E6EB;
 }
 
-div div p.quote-text {
+.quote-text {
     font-size: 36px;
     font-style: italic;
     font-weight: light;
@@ -81,14 +80,8 @@ div div p.quote-text {
     background-color: #3882F6;
 }
 
-/* section 2 -end, footer -start */
 
-.footer {
-    background-color: #1F2937;
-    color: #F9FAF8;
-}
-
-div div #ad-button {
+.ad button {
     background-color: #3882F6;
     color: #E5E7EB;
     border-radius: 6px;
@@ -96,25 +89,40 @@ div div #ad-button {
     border: 2px solid #E5E7EB;
 }
 
-/* footer -end, flexbox -start */
+
+.footer {
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+/* Flexbox */
 
 body {
     display: flex;
     flex-direction: column;
 }
 
-.header {
+.navbar {
     display: flex;
     align-items: center;
+    flex: 0 0 auto;
 }
 
-.header ul {
+.navbar ul {
     display: flex;
     gap: 12px;
     margin-left: auto;
 }
-
-.section1 {
+.header {
     display: flex;
     gap: 25px;
+    flex: 0 0 auto;
+}
+
+.section {
+    flex: 1;
+}
+
+.footer {
+    flex: 0 0 auto;
 }
