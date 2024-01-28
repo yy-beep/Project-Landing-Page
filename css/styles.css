@@ -105,7 +105,7 @@ body {
 .navbar {
     display: flex;
     align-items: center;
-    flex: 0 0 auto;
+    flex: initial;
 }
 
 .navbar ul {
@@ -116,13 +116,42 @@ body {
 .header {
     display: flex;
     gap: 25px;
-    flex: 0 0 auto;
+    flex: initial;
 }
 
 .section {
-    flex: 1;
+    flex: auto;
+}
+
+.illustration {
+    display: flex;
+}
+
+.quote {
+    flex: auto;
+}
+
+.ad {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer {
-    flex: 0 0 auto;
+    flex: initial;
+}
+
+/* ??? */
+
+.container {
+    display: flex;
+}
+
+.section .container {
+    flex-direction: column;
+}
+
+.quote .container {
+    flex-direction: column;
 }
