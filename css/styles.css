@@ -50,7 +50,7 @@ h1 {
     background-color: #3882F6;
     color: #E5E7EB;
     border-radius: 6px;
-    padding: 4px 19px;
+    padding: 5px 22px;
     border: none;
 }
 
@@ -85,7 +85,7 @@ h2 {
     background-color: #3882F6;
     color: #E5E7EB;
     border-radius: 6px;
-    padding: 4px 19px;
+    padding: 5px 22px;
     border: 2px solid #E5E7EB;
 }
 
@@ -102,21 +102,10 @@ body {
     flex-direction: column;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    flex: initial;
-}
-
 .navbar ul {
     display: flex;
     gap: 12px;
     margin-left: auto;
-}
-.header {
-    display: flex;
-    gap: 25px;
-    flex: initial;
 }
 
 .section {
@@ -146,12 +135,26 @@ body {
 
 .container {
     display: flex;
+    padding: 0 250px;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 75px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .hero {
+    gap: 12px;
+    flex: 0 1 600px;
 }
 
 .section .container {
-    flex-direction: column;
-}
 
-.quote .container {
-    flex-direction: column;
 }
