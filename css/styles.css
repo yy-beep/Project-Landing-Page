@@ -1,7 +1,7 @@
-/* * {
+* {
     border: 2px red dashed;
     padding: 5px;
-} */
+}
 
 * {
     margin: 0;
@@ -80,6 +80,13 @@ h2 {
     background-color: #3882F6;
 }
 
+h3 {
+    color: #E5E7EB;
+}
+
+.ad-info {
+    color: #E5E7EB;
+}
 
 .ad button {
     background-color: #3882F6;
@@ -125,6 +132,8 @@ body {
     flex: auto;
     justify-content: center;
     align-items: center;
+    margin: 60px 250px;
+    border-radius: 8px;
 }
 
 .footer {
@@ -135,7 +144,7 @@ body {
 
 .container {
     display: flex;
-    padding: 0 250px;
+    padding: 0 300px;
 }
 
 .navbar .container {
@@ -155,6 +164,28 @@ body {
     flex: 0 1 600px;
 }
 
-.section .container {
+.quote .container {
+    flex-direction: column;
+    width: 800px;
+}
 
+.quote-text {
+    font-weight: 300;
+}
+
+.credit {
+    align-self: flex-end;
+    font-weight: 700;
+}
+
+.ad .container {
+    padding: 25px;
+    gap: 220px;
+    align-items: center;
+}
+
+.footer .container {
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
 }
